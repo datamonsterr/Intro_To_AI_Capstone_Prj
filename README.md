@@ -18,10 +18,13 @@
 
 # Demo:
 
-- Run `python cli.py your_image_path` to receive the prediction of our pre-trained model in your terminal.
-- Run `python gui.py` to open GUI app.
+- Run `python cli.py model_path your_image_path` to receive the prediction of our pre-trained model in your terminal.
+- Run `python gui.py model_path` to open GUI app.
 
 # Re-train the model:
 
 - Download the dataset
 - Take a look at `cnn.ipynb` and re-run
+
+# Pre-trained model:
+- If you do not want to re-train, you can download our [model](https://bit.ly/traffic-signs-recognition-models)

@@ -4,10 +4,11 @@ from PIL import Image, ImageTk
 import keras
 import cv2
 import numpy as np
+import sys
 
 keras.utils.set_random_seed(42)
 
-model = keras.models.load_model("models/final_model_(3, 3)_64_0.4.keras")
+model = keras.models.load_model(sys.argv[1])
 
 
 def make_prediction(path):

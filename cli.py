@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 keras.utils.set_random_seed(42)
 
-reconstructed_model = keras.saving.load_model("models/final_model_(3, 3)_64_0.4.keras")
+reconstructed_model = keras.saving.load_model(sys.argv[1])
 
 classes = {
     0: "Speed limit 20",
@@ -73,4 +73,4 @@ def test_with_custom_img(imgs):
     print(classes[results[0]])
 
 
-test_with_custom_img(preprocess(sys.argv[1]))
+test_with_custom_img(preprocess(sys.argv[2]))
