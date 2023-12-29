@@ -6,7 +6,7 @@
 # Datasets:
 
 - 43 folders represent 43 classes.
-- Each folder contains multiple images (ppm format) of a traffic sign
+- Each folder contains multiple images (png format) of a traffic sign
 - Each folder contains a csv file which has information of each images in the same directory
 
 # Set up:
@@ -18,7 +18,8 @@
 
 # Demo:
 
-- Run `python main.py your_image_path` to receive the prediction of our pre-trained model.
+- Run `python cli.py your_image_path` to receive the prediction of our pre-trained model in your terminal.
+- Run `python gui.py` to open GUI app.
 
 # Re-train the model:
 
