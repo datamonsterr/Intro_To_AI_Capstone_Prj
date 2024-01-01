@@ -5,10 +5,12 @@ import keras
 import cv2
 import numpy as np
 import sys
+from sklearn.metrics import accuracy_score
+import pandas as pd
 
 keras.utils.set_random_seed(42)
 
-model = keras.models.load_model(sys.argv[1])
+model = keras.models.load_model("models/final_model_without_roi.keras")
 
 
 def make_prediction(path):
